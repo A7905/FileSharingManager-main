@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>File Sharing Application</title>
+
+    <script src="https://kit.fontawesome.com/106a3659bb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link th:href="@{/styles/css/homestyle.css}" rel="stylesheet" />
+
+    <style media="screen">*,
+    *:before,*:after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+
+<body>
+<!-- <nav>
+    <div class="logo">
+        <p>LOGO</p>
+    </div>
+</nav> -->
+<header>
+    <p>Welcome to the File Saring Application!</p>
+</header>
+
+
+<div class="header-test">
+    <h1 class="header-title">File Sharing App</h1>
+    <h3 class="header-line">Effortless Sharing, Boundless Possibilities</h3>
+</div>
+<!-- <div class="faltu">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam praesentium sit et! Minima, sequi facere laborum excepturi iste error incidunt, a modi suscipit dolore ullam, fuga soluta optio! Excepturi.
+    Sapiente velit alias doloribus blanditiis hic necessitatibus, debitis animi soluta recusandae earum rem eveniet a explicabo nam veritatis id quisquam porro obcaecati. Rem eum vero aspernatur eos modi totam inventore.
+    Sit, pariatur qui, magni facilis quia debitis necessitatibus hic laboriosam amet animi iste et! Harum ullam recusandae enim sequi consequuntur, at deleniti, quisquam quia dicta animi error itaque qui quae.
+    Iure architecto tempore eaque, aliquam vero amet repellat ipsam exercitationem obcaecati dolor aliquid magnam distinctio dignissimos veniam, est dolores omnis beatae fugit deserunt non impedit quisquam, reiciendis voluptatibus facere? Quaerat.
+    Aspernatur, minima quae sit eos voluptas at ea quibusdam consectetur, autem, voluptatibus impedit eius reiciendis. Quod molestias, velit impedit, voluptatum rerum facere harum optio consequatur dolores quaerat dignissimos natus itaque.
+    Tempore, earum dolorem beatae necessitatibus, ipsum maiores velit hic vitae eaque sed fuga. Rerum at eveniet porro repellendus accusantium? Sed maiores obcaecati quaerat praesentium eligendi eius officiis sapiente deserunt ut!
+    Molestias laudantium quisquam dolores ab itaque, eaque possimus maxime. Praesentium numquam repudiandae quis nisi nemo omnis, aliquid blanditiis nobis impedit inventore, sit repellendus explicabo, officiis rem! Laboriosam deserunt optio asperiores.
+    Repudiandae officiis cupiditate accusamus quis recusandae, hic nihil excepturi unde reprehenderit. Neque temporibus corporis eius modi unde perferendis alias, veniam quasi enim, quidem repudiandae earum voluptatum recusandae nobis suscipit pariatur?
+    A quisquam, iusto, impedit vitae reiciendis animi eligendi ea consequuntur fuga, doloribus eveniet. Eius eum molestiae deleniti ullam ipsa natus maiores quas, enim in fugit quis aut reprehenderit. Corrupti, tempora.
+    Repellendus soluta eos dolorum illum sit quas dolor vero quaerat magni veniam? Omnis nostrum, iure fugiat quisquam praesentium dicta quia hic voluptatibus dolores quaerat quasi ab laboriosam, sapiente iste corrupti?
+</div> -->
+<main>
+    <div class="animation-container">
+        <!-- Images of computers -->
+
+        <img th:src="@{/styles/assets/leftpc.png}" alt="Left Computer" class="computer left-computer">
+
+
+        <div class="paper-airplane"></div>
+        <img th:src="@{/styles/assets/rightpc.png}" alt="Right Computer" class="computer right-computer">
+        <!-- Dotted path -->
+        <div class="dotted-path"></div>
+    </div>
+    <!-- <p>Effortlessly share files from one device to another.</p> -->
+</main>
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+
+<!-- <div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolorem a hic beatae. 
+    Odit ipsa nobis illo, maxime cum ipsam culpa tempora. Iusto eaque, aut delectus sit consequatur aliquam? Necessitatibus.
+</div> -->
+
+
+<div class="card-container">
+    <div class="card">
+
+        <div class="card-front">
+            <h3>About</h3><br>
+            <p>Welcome to our innovative file-sharing platform, designed to make transferring files between devices effortless and secure. Whether you're sending documents, photos, videos, or any other type of file, our app provides a seamless experience tailored to your needs.</p>
+            <p>Key Features:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔸Fast and Secure Transfers<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔸User-Friendly Interface<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔸Cross-Platform Compatibility<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔸No Size Limits<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔸Real-Time Collaboration<br><br>
+                Discover a new way of sharing files with convenience and security. Join us and start sharing smarter today!</p>
+            <button class="login-btn">Login</button>
+        </div>
+        <div class="card-back">
+            <form>
+                <h3>Login Here</h3>
+                <!--                <label for="username">Username</label>-->
+                <!--                <input type="text" placeholder="Email or Phone" id="username" required>-->
+                <!--                <label for="password">Password</label>-->
+                <!--                <input type="password" placeholder="Password" id="password" required>-->
+                <!--                <button type="submit">Log In</button>-->
+                <div class="social">
+                    <a href="/oauth2/authorization/google" class="go"><i class="fab fa-google"></i> Google</a>
+                    <a href="/oauth2/authorization/github" class="gitHub"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                <p class="about-btn">back</p>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+<footer>
+    <p>© 2024 FileSharePro. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelector('.login-btn').addEventListener('click', function () {
+        document.querySelector('.card').classList.toggle('flipped');
+    });
+    document.querySelector('.about-btn').addEventListener('click', function () {
+        document.querySelector('.card').classList.toggle('flipped');
+    });
+</script>
+
+</body>
+</html>
